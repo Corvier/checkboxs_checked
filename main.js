@@ -3,6 +3,7 @@ let count = 0;
 
 document.getElementById("checkbox_all").onclick = function() {
     count = 0;
+    // Para contar las selecciones de todos los checkbox con un solo click
     for (let checkbox of checkboxes) {
         checkbox.checked = this.checked;
         
@@ -16,7 +17,7 @@ document.getElementById("checkbox_all").onclick = function() {
     }
 }
 
-// For para contar selecciones totales de forma individual.
+// para contar selecciones totales de forma individual.
 for (let i = 0; i < checkboxes.length; i++) {
     checkboxes[i].addEventListener('click', function() {
         if (this.checked == true) {
