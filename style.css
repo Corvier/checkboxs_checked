@@ -1,0 +1,79 @@
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+* {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    position: relative;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: #131721;
+}
+
+.top-header {
+    position: relative;
+    width: 100%;
+    padding-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.top-header p {
+    padding: 8px;
+    background: rgb(0, 188, 212, .2);
+    border-radius: 10px;
+}
+
+.top-header p span {
+    display: inline-block;
+    color: #00bcd4;
+    font-size: 1.1rem;
+}
+
+.container table thead tr th {
+    background: #1d1d1d;
+    padding: 16px 6px;
+}
+
+.container table tbody tr td {
+    padding: 16px 6px;
+}
+
+.container table tbody tr td span {
+    display: inline-block;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Paid */
+.container table tbody tr td span.paid {
+    color: #5aae30;
+    background: rgba(90, 174, 48, .2);
+    border: 1px solid #5aae30;
+}
+
+/* Unpaid */
+.container table tbody tr td span.unpaid {
+    color: #dd3741;
+    background: rgba(221, 55, 65, .2);
+    border: 1px solid #dd3741;
+}
+
+/* Pending */
+.container table tbody tr td span.pending {
+    color: #b6b821;
+    background: rgba(182, 184, 33, .2);
+    border: 1px solid #b6b821;
+}
+
+.container table tbody tr td a {
+    display: inline-block;
+    text-decoration: none;
+    color: #00bcd4;
+}
